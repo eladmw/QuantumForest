@@ -425,7 +425,7 @@ class QuantumForest(object):
         y : array, shape (n_samples,)
             The predicted values.
         """
-        self.profile.Snapshot("PRED_0")
+#         self.profile.Snapshot("PRED_0")
         # print("====== LiteMORT_predict X_={} ......".format(X_.shape))
         Y_ = self.predict_raw(X_,pred_leaf, pred_contrib,raw_score,flag=flag)
         Y_ = self.problem.AfterPredict(X_,Y_)
